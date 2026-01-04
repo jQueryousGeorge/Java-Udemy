@@ -44,7 +44,7 @@ public class HouseBlueprint {
         // 7. OBJECT
         // This is the "Actual House."
         // Use the 'new' keyword to turn the Blueprint Class into a real Object in memory.
-        HouseBlueprint myHouse = new HouseBlueprint("Blue", 3);
+        HouseBlueprint myHouse = new HouseBlueprint("brick", 3);
 
         // 8. CALLING A METHOD
         // This is "Using the House."

@@ -54,6 +54,7 @@ public class CuboidExample {
 
         System.out.println("Lastly, What is the breadth/width of the hexahedron?");
         width = sc.nextInt();
+        sc.close();
         System.out.println(" ");
 
         totalArea = 2 * (length * width + length * height + width * height);

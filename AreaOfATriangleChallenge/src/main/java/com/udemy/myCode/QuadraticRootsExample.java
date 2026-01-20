@@ -25,6 +25,7 @@ public class QuadraticRootsExample {
 
         System.out.println("What is the value of C in the quad formula?");
         c = sc.nextInt();
+        sc.close();
 
         r1 = ((-b + (Math.sqrt((b * b) - (4 * a * c)))) / (2 * a));
         r2 = ((-b - (Math.sqrt((b * b) - (4 * a * c)))) / (2 * a));

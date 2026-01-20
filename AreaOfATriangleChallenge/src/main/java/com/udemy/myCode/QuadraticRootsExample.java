@@ -12,7 +12,7 @@ public class QuadraticRootsExample {
     - double r1, r2
     */
 
-    public static int[] FindRoots() {
+    public static void FindRoots() {
         int a, b, c;
         double r1, r2;
         Scanner sc = new Scanner(System.in);
@@ -27,12 +27,22 @@ public class QuadraticRootsExample {
         System.out.println("What is the value of C in the quad formula?");
         c = sc.nextInt();
 
-        return new int[] {a, b, c};
+        r1 = ((-b + (Math.sqrt((b * b) - (4 * a * c)))) / (2 * a));
+        r2 = ((-b - (Math.sqrt((b * b) - (4 * a * c)))) / (2 * a));
+
+        System.out.println(" ");
+        System.out.println("##########################################################");
+        System.out.println("##########################################################");
+        System.out.println(" ");
+        System.out.println(" ");
+
+        System.out.println("Root 1 equals: -> -> " + r1);
+        System.out.println("Root 2 equals: -> -> " + r2);
     }
 
 
     public static void main (String[] args)
     {
-        Roots();
+        FindRoots();
     }
 }

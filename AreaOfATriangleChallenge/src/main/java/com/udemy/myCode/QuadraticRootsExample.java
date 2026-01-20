@@ -12,7 +12,7 @@ public class QuadraticRootsExample {
     - double r1, r2
     */
 
-    public static int[] FormulaValues() {
+    public static int[] FindRoots() {
         int a, b, c;
         double r1, r2;
         Scanner sc = new Scanner(System.in);
@@ -30,10 +30,6 @@ public class QuadraticRootsExample {
         return new int[] {a, b, c};
     }
 
-    public static void Roots() {
-        int[] formulaValues = FormulaValues();
-        System.out.println(formulaValues);
-    }
 
     public static void main (String[] args)
     {

@@ -1,4 +1,4 @@
-package com.udemy.areaOfTri;
+package com.udemy.myCode;
 import java.util.Scanner;
 
 public class AreaTriangleCalculator {

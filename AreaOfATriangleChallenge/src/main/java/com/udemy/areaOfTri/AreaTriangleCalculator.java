@@ -61,7 +61,7 @@ public class AreaTriangleCalculator {
 		semiperimeter = (a + b + c) * 0.5f;
 		
 		area = Math.sqrt((semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c) * semiperimeter);
-		System.out.println(area);
+		System.out.println("The area of the triangle is: " + area);
 		
 	}
 	

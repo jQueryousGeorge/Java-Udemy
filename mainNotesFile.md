@@ -31,8 +31,6 @@
 - Parentheses are used to change the order of precedence. Place the desired operator into a parentheses and it will take precedence.
 - The lecturer mentioned something about larger dtypes. It might be a rule that the larger dtype is the one who takes precedence (e.g., float > int --> so, the combined value will be of type float).
 
----
-
 ### [Operators in Java] Combined dtypes; what if they're different types?
 If you try to add a `short` and a `byte`, or a `long` and a `byte`, they will all be converted to **integers**, as the basic value type for all of these is an integer. As well, Java's `+` operator assumes both dtypes on both sides of the `+` operator are integers by default. 
 
@@ -59,11 +57,32 @@ float c = (float) a / b;
 #### [T] Quick Note!
 Java's scope: Local variables belong to the block `{ }` they are declared in. Two different methods inside a class cannot reference variables within each. To share a variable declared in method x with the main method, you can either (1) return a value in method x, then just declare a variable in main method as method x (execution) ... (e.g., in main: `int aa = methodX();`), (2) use `System.out.println();` inside method x and then just call the method inside the main method, or (3) declare a static variable inside the global class scope (e.g., `static int aa;`), then assign a value to the variable inside method x... wbecause then the main method will have the known value when you attempt to print it out.
 
----
-
 ### [Operators in Java] What is an Expression?
 In Java, an expression is a combination of variables, literals, operators, and method calls that evaluates to a *single value*.
 
 #### [T] Quick Note!
 What does *parse* mean? -> In programming, parsing means analyzing a string of characters to extract meaningful data and convert it into a structured format that a computer can process.
 - For `Integer.parseInt();`, Java will read each char of a string, one-by-one, to extract the ints, then convert the chars to an Integer.
+
+---
+
+## Section 4 E36 - Bitwise Operators
+Digital electornics. These operators peform operations on **bits** of data. Computers work based on bitwise operators, since computers are electronics.
+- Bitwise operations are faster than other computer operations.
+- Bitwise operators are only performed on *integer* dtypes!
+
+### *[Bitwise Oeprators]* The operators:
+- `AND`: "only keep 1 if both bits are 1"
+- `OR`: "keep a 1 if either bit is 1"
+- `NOT`: "Flip every bit"
+- `XOR` (exclusive): "1, ONLY if both bits are different!"
+- `RIGHT SHIFT`: "Shift bits right (divide by powers of 2)"
+- `UNSIGNED RIGHT SHIFT`: "Right shift, fill with 0s"
+- `LEFT SHIFT`: "Shift bits left (multiply by powers of 2)"
+
+### 🧩 Mental model to remember
+- `&` → filter
+- `|` → combine
+- `^` → toggle
+- `<<` → ×2ⁿ
+- `>>` → ÷2ⁿ

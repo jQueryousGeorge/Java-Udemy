@@ -48,6 +48,24 @@ public class IncAndDecrementOperators {
             ********* Explanation:
             - 'A' = 65 in Unicode. When we increment, it become 66, which is a 'B', not an 'A'.
             */
+
+
+
+            // ###################################
+
+            byte bbb = 5;
+		
+            // bbb = bbb + 1; // Error!!
+            
+            System.out.println(b);
+            /* 
+            ** Explanation:
+            - Contact.java:5: error: incompatible types: possible lossy conversion from int to byte
+		    - - bbb = bbb + 1;
+
+            - Basically, the '1' is an Integer, and conflicts with the byte bbb.
+            - 'bbb++'' in place of 'b = b + 1' increment operator will work, though.
+            */
             
     }
 }

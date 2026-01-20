@@ -86,3 +86,21 @@ Digital electornics. These operators peform operations on **bits** of data. Comp
 - `^` → toggle
 - `<<` → ×2ⁿ
 - `>>` → ÷2ⁿ
+
+--- 
+
+## Section 4, E41 - **Widening and Narrowing**
+Related to conversion of data type(s) of given data item. Basically -> "Can we fit this one-byte dtype into a different, two-byte dtype?". It is all about fitting differently-sized dtypes into one value, to save space.
+
+### *[Widening and Narrowing]* Widening Process: using `byte` and `short`
+Scenario: A short is of size 'two bytes' BUT it is only using one byte to store a value, and a byte is of size 'one byte.' So, can we successfully store a byte inside of a short? Yes, as long as one of the short's bytes is empty/vacant. This process is called **widening** since the *short* fills its extra, vacant byte.
+- If a dtype can accomodate more bytes, the process is known as **widening**.
+- The JVM compiler *can* implicity carry-out the widening process to save space.
+- Narrowing has to be done *explicitly*! It is not done implicitly.
+- Widening is also known as **upcasting**. Narrowing is also known as **downcasting**.
+
+Now, if an `int` (4 bytes) accomodates/welcomes a one-byte `short`, this is known as **narrowing**, because the `short` is freeing up more space in itself. The `int`, on the otherhand, is widening because it gains another byte.
+- Remember, the dtypes must be compatible in order to carry out these processes.
+- If you want to attempt a conversion (e.g., `b = s;`), then you can try to force the larger dtype into the smaller one. However, there will be a 100% chance of data loss. If the value inside a `short` is small enough to fit into a `byte`, then you will be okay, but if the value is too large for a `byte`, then data loss will occur.
+    - e.g., the largest value allowed in a `byte` is `127`... any value larger than this will not work. Data loss upon force.
+- `i = f;` : not allowed, as `int` doesn't support decimals.

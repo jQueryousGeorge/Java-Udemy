@@ -25,7 +25,7 @@
 
 ---
 
-## Section 4 E29 - Operators in Java
+## Section 5, E29 - Operators in Java
 ### [Operators in Java] Operator precedence
 `*` and `/` and `%` >>> `+` and `-`
 - Parentheses are used to change the order of precedence. Place the desired operator into a parentheses and it will take precedence.
@@ -66,7 +66,7 @@ What does *parse* mean? -> In programming, parsing means analyzing a string of c
 
 ---
 
-## Section 4 E36 - Bitwise Operators
+## Section 5 E36 - Bitwise Operators
 Digital electornics. These operators peform operations on **bits** of data. Computers work based on bitwise operators, since computers are electronics.
 - Bitwise operations are faster than other computer operations.
 - Bitwise operators are only performed on *integer* dtypes!
@@ -89,7 +89,7 @@ Digital electornics. These operators peform operations on **bits** of data. Comp
 
 --- 
 
-## Section 4, E41 - **Widening and Narrowing**
+## Section 5, E41 - **Widening and Narrowing**
 Related to conversion of data type(s) of given data item. Basically -> "Can we fit this one-byte dtype into a different, two-byte dtype?". It is all about fitting differently-sized dtypes into one value, to save space.
 
 ### *[Widening and Narrowing]* Widening Process: using `byte` and `short`
@@ -104,3 +104,4 @@ Now, if an `int` (4 bytes) accomodates/welcomes a one-byte `short`, this is know
 - If you want to attempt a conversion (e.g., `b = s;`), then you can try to force the larger dtype into the smaller one. However, there will be a 100% chance of data loss. If the value inside a `short` is small enough to fit into a `byte`, then you will be okay, but if the value is too large for a `byte`, then data loss will occur.
     - e.g., the largest value allowed in a `byte` is `127`... any value larger than this will not work. Data loss upon force.
 - `i = f;` : not allowed, as `int` doesn't support decimals.
+- Compatibility of the dtypes reference: `https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/03/assignment-compatibility-in-java.jpg`.

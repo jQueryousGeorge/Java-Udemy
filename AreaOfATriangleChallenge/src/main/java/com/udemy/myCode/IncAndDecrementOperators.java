@@ -33,7 +33,6 @@ public class IncAndDecrementOperators {
             float f = 5 * 3;
             f++;
             System.out.println(f); // 16.0
-
             /* 
             ********* Explanation:
             - The ++ operator doesn't go back and change the 5 to 6 in the original multiplication. Once 5 * 3 is evaluated and assigned to f, that expression is done. The increment only affects the variable f itself, adding 1 to whatever value it currently holds.

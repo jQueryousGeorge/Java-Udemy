@@ -3,7 +3,7 @@ package com.udemy.mycode;
 public class WideningAndNarrowing {
 
     public static void WideAndNarrowExample1() {
-        int i = 10;
+        int i;
         float f = 10.5f;
 
         i = (int) f;

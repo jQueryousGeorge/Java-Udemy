@@ -31,6 +31,12 @@ public class QuadraticRootsExample {
     }
 
     public static void Roots() {
-        
+        int[] formulaValues = FormulaValues();
+        System.out.println(formulaValues);
+    }
+
+    public static void main (String[] args)
+    {
+        Roots();
     }
 }

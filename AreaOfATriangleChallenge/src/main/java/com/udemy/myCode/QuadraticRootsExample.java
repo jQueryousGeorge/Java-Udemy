@@ -1,5 +1,4 @@
-package main.java.com.udemy.myCode;
-
+package com.udemy.mycode;
 import java.util.Scanner;
 
 /* 

@@ -1,5 +1,4 @@
 package com.udemy.areaOfTri;
-import java.lang.*;
 import java.util.Scanner;
 
 public class AreaTriangleCalculator {
@@ -8,23 +7,24 @@ public class AreaTriangleCalculator {
 	public static void Area() {
 		/* 
 		 * This was my first attempt at the challenge
-		 */
+		*/
 		
-//		int area, base, height;
-//		
-//		Scanner input = new Scanner(System.in);
-//		
-//		System.out.println("Hello, please give the base of the triangle:");
-//		String baseInput = input.next();
-//		base = Integer.parseInt(baseInput);
-//		
-//		System.out.println("Hello, please give the height of the triangle:");
-//		String heightInput = input.next();
-//		height = Integer.parseInt(heightInput);
-//		
-//		area = ((0.5 * base) * height);
-//		
-//		System.out.println(((0.5 * base) * height));
+		/* 
+		int area, base, height;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Hello, please give the base of the triangle:");
+		String baseInput = input.next();
+		base = Integer.parseInt(baseInput);
+		
+		System.out.println("Hello, please give the height of the triangle:");
+		String heightInput = input.next();
+		height = Integer.parseInt(heightInput);
+		
+		area = ((0.5 * base) * height);
+		
+		System.out.println(((0.5 * base) * height)); */
 	}
 	
 	public static void AreaAnswer() {
@@ -56,9 +56,9 @@ public class AreaTriangleCalculator {
 		
 		System.out.println("Please enter the value of Side C of the triangle ....");
 		c = input.nextFloat();
+		input.close();
 		
 		semiperimeter = (a + b + c) * 0.5f;
-//		Float HeronsFormula = Math.sqrt(s * (s - a));
 		
 		area = Math.sqrt((semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c) * semiperimeter);
 		System.out.println(area);

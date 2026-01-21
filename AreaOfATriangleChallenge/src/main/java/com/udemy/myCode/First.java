@@ -1,9 +1,7 @@
-package com.udemy.mycode;
+package com.udemy.myCode;
 
-public class First
-{
-	public static void main(String[] args)
-	{
+public class First {
+	public static void main(String[] args) {
 		System.out.println("Hi, Zire!");
 	}
 }

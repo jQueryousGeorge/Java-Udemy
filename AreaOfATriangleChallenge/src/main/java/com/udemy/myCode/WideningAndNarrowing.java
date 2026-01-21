@@ -1,4 +1,4 @@
-package com.udemy.mycode;
+package com.udemy.myCode;
 
 public class WideningAndNarrowing {
 

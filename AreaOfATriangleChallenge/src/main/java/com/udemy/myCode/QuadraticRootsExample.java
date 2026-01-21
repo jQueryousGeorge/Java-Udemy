@@ -1,4 +1,5 @@
-package com.udemy.mycode;
+package com.udemy.myCode;
+
 import java.util.Scanner;
 
 /* 
@@ -6,17 +7,19 @@ import java.util.Scanner;
 */
 
 public class QuadraticRootsExample {
-    /* We should use these vars:
-    - int a, b, c
-    - double r1, r2
-    */
+    /*
+     * We should use these vars:
+     * - int a, b, c
+     * - double r1, r2
+     */
 
     public static void FindRoots() {
         int a, b, c;
         double r1, r2;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("To find the roots of a given quad formula, let's start with the variables of your quad formula! ");
+        System.out.println(
+                "To find the roots of a given quad formula, let's start with the variables of your quad formula! ");
         System.out.println("What is the value of A in the quad formula?");
         a = sc.nextInt();
 
@@ -40,9 +43,7 @@ public class QuadraticRootsExample {
         System.out.println("Root 2 equals: -> -> " + r2);
     }
 
-
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         FindRoots();
     }
 }

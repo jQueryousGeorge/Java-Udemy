@@ -1,4 +1,5 @@
-package com.udemy.mycode;
+package com.udemy.myCode;
+
 import java.util.Scanner;
 
 /* 
@@ -12,34 +13,36 @@ import java.util.Scanner;
 
 public class CuboidExample {
 
-    /* public static void Hexahedron(){
-        Scanner sc = new Scanner(System.in);
-        int frontBack, topBottom, rightLeft, height, length, breadth;
-        long volume, totalArea;
-
-        System.out.println("Hi! What is the height of the hexahedron?");
-        height = sc.nextInt();
-
-        System.out.println("Now, What is the length of the hexahedron?");
-        length = sc.nextInt();
-
-        System.out.println("Lastly, What is the breadth of the hexahedron?");
-        breadth = sc.nextInt();
-        System.out.println(" ");
-
-        frontBack = length * height;
-        rightLeft = breadth * height;
-        topBottom = length * breadth;
-
-        volume = length * breadth * height;
-
-        totalArea = volume + (frontBack + rightLeft + topBottom);
-
-        System.out.println("######## ###### ###### ######");
-        System.out.println(" ");
-        System.out.println("The TOTAL AREA of the cuboid is: -> -> " + totalArea);
-
-    } */
+    /*
+     * public static void Hexahedron(){
+     * Scanner sc = new Scanner(System.in);
+     * int frontBack, topBottom, rightLeft, height, length, breadth;
+     * long volume, totalArea;
+     * 
+     * System.out.println("Hi! What is the height of the hexahedron?");
+     * height = sc.nextInt();
+     * 
+     * System.out.println("Now, What is the length of the hexahedron?");
+     * length = sc.nextInt();
+     * 
+     * System.out.println("Lastly, What is the breadth of the hexahedron?");
+     * breadth = sc.nextInt();
+     * System.out.println(" ");
+     * 
+     * frontBack = length * height;
+     * rightLeft = breadth * height;
+     * topBottom = length * breadth;
+     * 
+     * volume = length * breadth * height;
+     * 
+     * totalArea = volume + (frontBack + rightLeft + topBottom);
+     * 
+     * System.out.println("######## ###### ###### ######");
+     * System.out.println(" ");
+     * System.out.println("The TOTAL AREA of the cuboid is: -> -> " + totalArea);
+     * 
+     * }
+     */
 
     public static void CorrectAnswer() {
         Scanner sc = new Scanner(System.in);
@@ -66,7 +69,7 @@ public class CuboidExample {
         System.out.println(" ");
         System.out.println("The VOLUME of the cuboid is: -> -> " + volume);
     }
-    
+
     public static void main(String[] args) {
         CorrectAnswer();
     }
